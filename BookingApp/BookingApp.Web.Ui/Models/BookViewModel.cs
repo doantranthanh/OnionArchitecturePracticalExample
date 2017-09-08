@@ -1,10 +1,20 @@
-﻿namespace BookingApp.Web.Ui.Models
+﻿using System.Collections.Generic;
+using BookingApp.Domain.Entities;
+
+namespace BookingApp.Web.Ui.Models
 {
     public class BookViewModel
     {
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public double Price { get; set; }
-        public int PublishedYear { get; set; }
+        private List<Book> books;
+
+        public BookViewModel()
+        {
+            this.books = new List<Book>();
+        }
+
+        public IList<Book> Books
+        {
+            get { return books; }
+        }
     }
 }

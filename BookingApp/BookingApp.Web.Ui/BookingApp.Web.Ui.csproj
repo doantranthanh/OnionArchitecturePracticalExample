@@ -129,6 +129,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookingApp.Domain.Entities\BookingApp.Domain.Entities.csproj">
+      <Project>{56f98e0d-99cb-4315-b6e3-b74737bb76c9}</Project>
+      <Name>BookingApp.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BookingApp.Services.Interfaces\BookingApp.Services.Interfaces.csproj">
+      <Project>{bc58c16d-88be-456d-9fdc-04e9af6fc655}</Project>
+      <Name>BookingApp.Services.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

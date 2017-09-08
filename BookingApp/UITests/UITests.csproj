@@ -123,6 +123,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BookingApp.Domain.Entities\BookingApp.Domain.Entities.csproj">
+      <Project>{56F98E0D-99CB-4315-B6E3-B74737BB76C9}</Project>
+      <Name>BookingApp.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BookingApp.Services.Interfaces\BookingApp.Services.Interfaces.csproj">
+      <Project>{BC58C16D-88BE-456D-9FDC-04E9AF6FC655}</Project>
+      <Name>BookingApp.Services.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BookingApp.Web.Ui\BookingApp.Web.Ui.csproj">
       <Project>{a9a2c103-c39e-470e-8311-8468901b5761}</Project>
       <Name>BookingApp.Web.Ui</Name>
