@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{084F31B8-5956-4160-A538-0A70F27FDCCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{8C2B6500-4542-48DF-A4A2-7B0BEBC3D0C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{13576A1B-AD5F-4F37-8E83-EDBFBABD11F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{560C06D8-4ABA-4CC5-9B3C-ED1212F98E27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{F2EA1D4F-6EEF-4672-925E-9D51DFADFD6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITests", "UITests\UITests.csproj", "{3BF57A8F-B0DD-4EE8-B8BE-BCB8F08B65A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingApp.Web.Ui", "BookingApp.Web.Ui\BookingApp.Web.Ui.csproj", "{A9A2C103-C39E-470E-8311-8468901B5761}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BF57A8F-B0DD-4EE8-B8BE-BCB8F08B65A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF57A8F-B0DD-4EE8-B8BE-BCB8F08B65A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF57A8F-B0DD-4EE8-B8BE-BCB8F08B65A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BF57A8F-B0DD-4EE8-B8BE-BCB8F08B65A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A2C103-C39E-470E-8311-8468901B5761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A2C103-C39E-470E-8311-8468901B5761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A2C103-C39E-470E-8311-8468901B5761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A2C103-C39E-470E-8311-8468901B5761}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3BF57A8F-B0DD-4EE8-B8BE-BCB8F08B65A4} = {8C2B6500-4542-48DF-A4A2-7B0BEBC3D0C3}
+		{A9A2C103-C39E-470E-8311-8468901B5761} = {084F31B8-5956-4160-A538-0A70F27FDCCC}
+	EndGlobalSection
+EndGlobal
