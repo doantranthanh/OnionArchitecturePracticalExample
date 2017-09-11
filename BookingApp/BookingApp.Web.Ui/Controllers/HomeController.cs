@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Web.Mvc;
 using BookingApp.Services.Interfaces;
 using BookingApp.Web.Ui.Models;
@@ -11,6 +12,10 @@ namespace BookingApp.Web.Ui.Controllers
 
         public HomeController(IBookService bookService)
         {
+            if (bookService == null)
+            {
+                throw new ArgumentNullException(nameof(bookService));
+            }
             this.bookService = bookService;
         }
 

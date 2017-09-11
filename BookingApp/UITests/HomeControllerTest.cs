@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using BookingApp.Domain.Entities;
@@ -44,7 +45,19 @@ namespace UITests
             var result = ((BookViewModel)viewResult.Model).Books.ToList();
 
             result.ShouldBeEquivalentTo(books);
+        }
 
+        [Fact]
+        public void CreateWithNullBookServiceWillThrow()
+        {
+            var fixture = new Fixture().Customize(new BookAppWebCustomization());
+            IBookService nullBookService = null;
+
+            Assert.Throws<ArgumentNullException>(() =>
+                fixture.Build<HomeController>()
+                    .FromFactory(() => new HomeController(nullBookService))
+                    .OmitAutoProperties()
+                    .Create());
         }
     }
 }
